@@ -1,0 +1,10 @@
+light\rt_nonfinite.o: ..\infineon_vitalsign\rt_nonfinite.c
+light\rt_nonfinite.o: ..\infineon_vitalsign\rt_nonfinite.h
+light\rt_nonfinite.o: ..\infineon_vitalsign\rtwtypes.h
+light\rt_nonfinite.o: ..\infineon_vitalsign\tmwtypes.h
+light\rt_nonfinite.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+light\rt_nonfinite.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+light\rt_nonfinite.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+light\rt_nonfinite.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+light\rt_nonfinite.o: ..\infineon_vitalsign\rtGetInf.h
+light\rt_nonfinite.o: ..\infineon_vitalsign\rtGetNaN.h

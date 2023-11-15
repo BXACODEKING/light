@@ -1,0 +1,1911 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: cao asus, sztu, LIC=3UURY-IC52D-PHM89-49JRX-BKKDL-E3BC9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.35.0.2
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\zz\light\MDK-ARM\light.uvprojx
+Project File Date:  03/02/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'light'
+compiling BasicMathFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctionsF16.c: 7 warnings, 19 errors
+compiling BasicMathFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c(79): warning:  #1-D: last line of file ends without a newline
+  #include "arm_clip_q7.c"
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c: 8 warnings, 19 errors
+compiling BayesFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\BayesFunctions\BayesFunctionsF16.c: 7 warnings, 19 errors
+compiling transfC.c...
+..\infineon_vitalsign\rt_nonfinite.h(49): warning:  #1295-D: Deprecated declaration rt_InitInfAndNaN - give arg types
+  extern void rt_InitInfAndNaN();
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/matrix_functions.h(548): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/matrix_functions.h(563): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(209): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(227): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(246): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/distance_functions.h(179): error:  #757: function "int32_t"  is not a type name
+  float32_t arm_minkowski_distance_f32(const float32_t *pA,const float32_t *pB, int32_t order, uint32_t blockSize);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(65): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE float32_t arm_exponent_f32(float32_t x, int32_t nb)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(91): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(105): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(106): error:  #757: function "int32_t"  is not a type name
+    int32_t         degree;                 /**< Polynomial degree */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(121): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+..\infineon_vitalsign\transfC.c: 8 warnings, 30 errors
+compiling BayesFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c: 7 warnings, 19 errors
+compiling ComplexMathFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c: 7 warnings, 19 errors
+compiling ComplexMathFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_conj_f16.c(185): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_dot_prod_f16.c(288): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_f16.c(241): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mag_squared_f16.c(174): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mult_cmplx_f16.c(271): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ComplexMathFunctions\arm_cmplx_mult_real_f16.c(194): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctionsF16.c: 13 warnings, 19 errors
+compiling ControllerFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(209): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(227): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(246): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ControllerFunctions\arm_pid_init_f32.c(53): error:  #757: function "int32_t"  is not a type name
+    int32_t resetStateFlag)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ControllerFunctions\arm_pid_init_q15.c(53): error:  #757: function "int32_t"  is not a type name
+    int32_t resetStateFlag)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ControllerFunctions\arm_pid_init_q31.c(53): error:  #757: function "int32_t"  is not a type name
+    int32_t resetStateFlag)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ControllerFunctions\arm_sin_cos_f32.c(94): error:  #32: expression must have arithmetic type
+    in = in - (int32_t)in;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ControllerFunctions\arm_sin_cos_f32.c(94): error:  #65: expected a ";"
+    in = in - (int32_t)in;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c: 8 warnings, 27 errors
+compiling CommonTables.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\CommonTables\CommonTables.c: 7 warnings, 19 errors
+compiling DistanceFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/distance_functions.h(179): error:  #757: function "int32_t"  is not a type name
+  float32_t arm_minkowski_distance_f32(const float32_t *pA,const float32_t *pB, int32_t order, uint32_t blockSize);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\DistanceFunctions\arm_minkowski_distance_f32.c(167): error:  #757: function "int32_t"  is not a type name
+  float32_t arm_minkowski_distance_f32(const float32_t *pA,const float32_t *pB, int32_t order, uint32_t blockSize)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c: 7 warnings, 21 errors
+compiling DistanceFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\DistanceFunctions\DistanceFunctionsF16.c: 7 warnings, 19 errors
+compiling FastMathFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_f32.c(76): warning:  #174-D: expression has no effect
+    int32_t n;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_f32.c(76): error:  #65: expected a ";"
+    int32_t n;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_f32.c(84): error:  #20: identifier "n" is undefined
+    n = (int32_t) in;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_f32.c(84): error:  #65: expected a ";"
+    n = (int32_t) in;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_q15.c(53): warning:  #174-D: expression has no effect
+    int32_t index;                                 /* Index variable */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_q15.c(53): error:  #65: expected a ";"
+    int32_t index;                                 /* Index variable */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_q15.c(65): error:  #20: identifier "index" is undefined
+    index = (uint32_t)x >> FAST_MATH_Q15_SHIFT;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_q31.c(53): warning:  #174-D: expression has no effect
+    int32_t index;                                 /* Index variable */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_q31.c(53): error:  #65: expected a ";"
+    int32_t index;                                 /* Index variable */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_cos_q31.c(65): error:  #20: identifier "index" is undefined
+    index = (uint32_t)x >> FAST_MATH_Q31_SHIFT;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_sin_f32.c(77): warning:  #174-D: expression has no effect
+    int32_t n;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_sin_f32.c(77): error:  #65: expected a ";"
+    int32_t n;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_sin_f32.c(85): error:  #20: identifier "n" is undefined
+    n = (int32_t) in;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_sin_f32.c(85): error:  #65: expected a ";"
+    n = (int32_t) in;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_sin_q15.c(53): warning:  #174-D: expression has no effect
+    int32_t index;                                 /* Index variable */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\arm_sin_q15.c(53): error:  #65: expected a ";"
+    int32_t index;                                 /* Index variable */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\FastMathFunctions.c: 12 warnings, 30 errors
+compiling FastMathFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FastMathFunctions\FastMathFunctionsF16.c: 7 warnings, 19 errors
+compiling FilteringFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(1939): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(1952): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(1965): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(1978): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(2013): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(2049): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(2087): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(2125): error:  #757: function "int32_t"  is not a type name
+          int32_t * pTapDelay,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(2138): error:  #757: function "int32_t"  is not a type name
+    int32_t * circBuffer,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(2139): error:  #757: function "int32_t"  is not a type name
+    int32_t L,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_functions.h(2141): error:  #757: function "int32_t"  is not a type name
+    int32_t bufferInc,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c: 7 warnings, 30 errors
+compiling FilteringFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_f16.c(491): warning:  #1-D: last line of file ends without a newline
+  #endif /*#if defined(ARM_FLOAT16_SUPPORTED)*/
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_f16.c(160): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df2T_init_f16.c(114): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_stereo_df2T_f16.c(434): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\FilteringFunctions\FilteringFunctionsF16.c: 11 warnings, 19 errors
+compiling InterpolationFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_f32.c(109): warning:  #174-D: expression has no effect
+      int32_t xIndex, yIndex, index;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_f32.c(109): error:  #65: expected a ";"
+      int32_t xIndex, yIndex, index;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_f32.c(113): error:  #20: identifier "xIndex" is undefined
+      xIndex = (int32_t) X;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_f32.c(113): error:  #65: expected a ";"
+      xIndex = (int32_t) X;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_f32.c(114): error:  #20: identifier "yIndex" is undefined
+      yIndex = (int32_t) Y;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_f32.c(114): error:  #65: expected a ";"
+      yIndex = (int32_t) Y;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_f32.c(124): error:  #20: identifier "index" is undefined
+      index = (xIndex ) + (yIndex ) * S->numCols;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_q15.c(56): warning:  #174-D: expression has no effect
+      int32_t rI, cI;                              /* Row and column indices */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_q15.c(56): error:  #65: expected a ";"
+      int32_t rI, cI;                              /* Row and column indices */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_q15.c(63): error:  #20: identifier "rI" is undefined
+      rI = ((X & (q31_t)0xFFF00000) >> 20);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_q15.c(68): error:  #20: identifier "cI" is undefined
+      cI = ((Y & (q31_t)0xFFF00000) >> 20);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_q31.c(57): warning:  #174-D: expression has no effect
+      int32_t rI, cI;                              /* Row and column indices */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_q31.c(57): error:  #65: expected a ";"
+      int32_t rI, cI;                              /* Row and column indices */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\arm_bilinear_interp_q31.c(64): error:  #20: identifier "rI" is undefined
+      rI = ((X & (q31_t)0xFFF00000) >> 20);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\InterpolationFunctions.c: 10 warnings, 30 errors
+compiling InterpolationFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\InterpolationFunctions\InterpolationFunctionsF16.c: 7 warnings, 19 errors
+compiling MatrixFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/matrix_functions.h(548): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/matrix_functions.h(563): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_scale_q15.c(136): error:  #757: function "int32_t"  is not a type name
+          int32_t                   shift,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_scale_q15.c(144): warning:  #174-D: expression has no effect
+          int32_t kShift = 15 - shift;                   /* Total shift to apply after scaling */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_scale_q15.c(144): error:  #65: expected a ";"
+          int32_t kShift = 15 - shift;                   /* Total shift to apply after scaling */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_scale_q15.c(232): error:  #20: identifier "kShift" is undefined
+        *pOut++ = (q15_t) (__SSAT(((q31_t) (*pIn++) * scaleFract) >> kShift, 16));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_scale_q31.c(135): error:  #757: function "int32_t"  is not a type name
+          int32_t                   shift,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_scale_q31.c(143): warning:  #174-D: expression has no effect
+    int32_t kShift = shift + 1;                    /* Shift to apply after scaling */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_scale_q31.c(143): error:  #65: expected a ";"
+    int32_t kShift = shift + 1;                    /* Shift to apply after scaling */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\arm_mat_scale_q31.c(222): error:  #20: identifier "kShift" is undefined
+        out = in << kShift;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c: 9 warnings, 27 errors
+compiling MatrixFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\MatrixFunctions\MatrixFunctionsF16.c: 7 warnings, 19 errors
+compiling QuaternionMathFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(183): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          doubler = sqrtf(trace + 1.0) * 2; // invs=4*qw
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(184): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          s = 1.0 / doubler;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(185): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          q[0] = 0.25 * doubler;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(192): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          doubler = sqrtf(1.0 + RI(0,0) - RI(1,1) - RI(2,2)) * 2; // invs=4*qx
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(193): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          s = 1.0 / doubler;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(195): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          q[1] = 0.25 * doubler;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(201): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          doubler = sqrtf(1.0 + RI(1,1) - RI(0,0) - RI(2,2)) * 2; // invs=4*qy
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(202): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          s = 1.0 / doubler;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(205): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          q[2] = 0.25 * doubler;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(210): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          doubler = sqrtf(1.0 + RI(2,2) - RI(0,0) - RI(1,1)) * 2; // invs=4*qz
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(211): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          s = 1.0 / doubler;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\arm_rotation2quaternion_f32.c(215): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          q[3] = 0.25 * doubler;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\QuaternionMathFunctions\QuaternionMathFunctions.c: 19 warnings, 19 errors
+compiling SVMFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(65): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE float32_t arm_exponent_f32(float32_t x, int32_t nb)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(91): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(105): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(106): error:  #757: function "int32_t"  is not a type name
+    int32_t         degree;                 /**< Polynomial degree */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(121): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(135): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(160): error:  #757: function "int32_t"  is not a type name
+    const int32_t  *classes);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(173): error:  #757: function "int32_t"  is not a type name
+     int32_t * pResult);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(199): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(200): error:  #757: function "int32_t"  is not a type name
+    int32_t      degree,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(215): error:  #757: function "int32_t"  is not a type name
+     int32_t * pResult);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c: 7 warnings, 30 errors
+compiling SVMFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\SVMFunctions\SVMFunctionsF16.c: 7 warnings, 19 errors
+compiling StatisticsFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\StatisticsFunctions\arm_mean_q15.c(150): error:  #32: expression must have arithmetic type
+    *pResult = (q15_t) (sum / (int32_t) blockSize);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\StatisticsFunctions\arm_mean_q15.c(150): error:  #18: expected a ")"
+    *pResult = (q15_t) (sum / (int32_t) blockSize);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\StatisticsFunctions\arm_mean_q7.c(147): error:  #32: expression must have arithmetic type
+    *pResult = (q7_t) (sum / (int32_t) blockSize);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\StatisticsFunctions\arm_mean_q7.c(147): error:  #18: expected a ")"
+    *pResult = (q7_t) (sum / (int32_t) blockSize);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c(68): warning:  #1-D: last line of file ends without a newline
+  #include "arm_absmin_q7.c"
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c: 8 warnings, 23 errors
+compiling StatisticsFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctionsF16.c(42): warning:  #1-D: last line of file ends without a newline
+  #include "arm_absmin_f16.c"
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctionsF16.c: 8 warnings, 19 errors
+compiling SupportFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/matrix_functions.h(548): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/matrix_functions.h(563): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(209): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(227): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/controller_functions.h(246): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/distance_functions.h(179): error:  #757: function "int32_t"  is not a type name
+  float32_t arm_minkowski_distance_f32(const float32_t *pA,const float32_t *pB, int32_t order, uint32_t blockSize);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(65): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE float32_t arm_exponent_f32(float32_t x, int32_t nb)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(91): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(105): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(106): error:  #757: function "int32_t"  is not a type name
+    int32_t         degree;                 /**< Polynomial degree */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h(121): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c: 7 warnings, 30 errors
+compiling SupportFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\SupportFunctions\SupportFunctionsF16.c: 7 warnings, 19 errors
+compiling TransformFunctions.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_rfft_fast_f32.c(315): warning:  #174-D: expression has no effect
+          int32_t  k;                                /* Loop Counter */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_rfft_fast_f32.c(315): error:  #65: expected a ";"
+          int32_t  k;                                /* Loop Counter */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_rfft_fast_f32.c(325): error:  #20: identifier "k" is undefined
+     k = (S->Sint).fftLen - 1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_rfft_fast_f32.c(404): warning:  #174-D: expression has no effect
+          int32_t  k;                                /* Loop Counter */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_rfft_fast_f32.c(404): error:  #65: expected a ";"
+          int32_t  k;                                /* Loop Counter */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_rfft_fast_f32.c(412): error:  #20: identifier "k" is undefined
+     k = (S->Sint).fftLen - 1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c: 9 warnings, 23 errors
+compiling TransformFunctionsF16.c...
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(156): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): warning:  #174-D: expression has no effect
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(158): error:  #65: expected a ";"
+      int32_t     n1;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(159): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(160): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(162): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ(hi) - 32;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(168): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ(lo);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(204): error:  #20: identifier "lo" is undefined
+          *normalized = (((uint32_t) lo) >> n1) | (hi << (32 - n1));
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(212): error:  #65: expected a ";"
+      int32_t   normalized;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   norm;
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h(220): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_const_structs_f16.h(77): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix2_f16.c(475): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_f16.c(1272): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_rfft_fast_init_f16.c(357): warning:  #1-D: last line of file ends without a newline
+  #endif /*  #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix8_f16.c(289): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\arm_bitreversal_f16.c(102): warning:  #1-D: last line of file ends without a newline
+  #endif /* #if defined(ARM_FLOAT16_SUPPORTED) */
+C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\TransformFunctions\TransformFunctionsF16.c: 13 warnings, 19 errors
+compiling main.c...
+../Core/Src/main.c(222): warning:  #177-D: variable "uv"  was declared but never referenced
+  		static unsigned short uv[2]={0,};
+../Core/Src/main.c(225): warning:  #177-D: variable "test_data"  was declared but never referenced
+  		static float test_data[1600] ={0.0,};
+../Core/Src/main.c(159): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "frame_idx"  (declared at line 171)
+            variable "headflag"  (declared at line 175)
+      goto Error_Assert;
+      ^
+../Core/Src/main.c(163): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "frame_idx"  (declared at line 171)
+            variable "headflag"  (declared at line 175)
+      goto Error_Assert;
+      ^
+../Core/Src/main.c(168): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "frame_idx"  (declared at line 171)
+            variable "headflag"  (declared at line 175)
+      goto Error_Assert;
+      ^
+../Core/Src/main.c(128): warning:  #550-D: variable "chip_id"  was set but never used
+  		uint32_t chip_id = 0;
+../Core/Src/main.c(175): warning:  #177-D: variable "headflag"  was declared but never referenced
+    uint8_t headflag[] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
+../Core/Src/main.c(365): warning:  #1-D: last line of file ends without a newline
+  #endif /* USE_FULL_ASSERT */
+../Core/Src/main.c(62): warning:  #177-D: variable "samples"  was declared but never referenced
+  static uint16_t samples[NUM_SAMPLES_PER_FRAME];
+../Core/Src/main.c: 9 warnings, 0 errors
+"light\light.axf" - 624 Error(s), 250 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+   * Component: DSP Variant: Source Version: 1.9.0-dev
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_light
+  C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include
+  C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\PrivateInclude
+  C:\Users\asus\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: ARM::CMSIS:DSP:Source:1.9.0-dev
+      Include file:  CMSIS\DSP\Include\arm_math_f16.h
+      Include file:  CMSIS\DSP\Include\arm_common_tables.h
+      Include file:  CMSIS\DSP\Include\arm_common_tables_f16.h
+      Include file:  CMSIS\DSP\Include\arm_const_structs.h
+      Include file:  CMSIS\DSP\Include\arm_math.h
+      Include file:  CMSIS\DSP\Include\arm_const_structs_f16.h
+      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c
+      Source file:   CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c
+      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\InterpolationFunctions\InterpolationFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c
+      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctions.c
+      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c
+      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\SupportFunctions\SupportFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\DistanceFunctions\DistanceFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c
+      Source file:   CMSIS\DSP\Source\CommonTables\CommonTablesF16.c
+      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c
+      Source file:   CMSIS\DSP\Source\BayesFunctions\BayesFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\SVMFunctions\SVMFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c
+      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c
+      Source file:   CMSIS\DSP\Source\InterpolationFunctions\InterpolationFunctions.c
+      Source file:   CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c
+      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c
+      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c
+      Source file:   CMSIS\DSP\Source\QuaternionMathFunctions\QuaternionMathFunctions.c
+      Source file:   CMSIS\DSP\Source\CommonTables\CommonTables.c
+Target not created.
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>

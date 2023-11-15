@@ -1,0 +1,9 @@
+light\rtgetinf.o: ..\infineon_vitalsign\rtGetInf.c
+light\rtgetinf.o: ..\infineon_vitalsign\rtGetInf.h
+light\rtgetinf.o: ..\infineon_vitalsign\rtwtypes.h
+light\rtgetinf.o: ..\infineon_vitalsign\tmwtypes.h
+light\rtgetinf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+light\rtgetinf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+light\rtgetinf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+light\rtgetinf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+light\rtgetinf.o: ..\infineon_vitalsign\rt_nonfinite.h

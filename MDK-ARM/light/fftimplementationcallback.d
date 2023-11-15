@@ -1,0 +1,10 @@
+light\fftimplementationcallback.o: ..\infineon_vitalsign\FFTImplementationCallback.c
+light\fftimplementationcallback.o: ..\infineon_vitalsign\FFTImplementationCallback.h
+light\fftimplementationcallback.o: ..\infineon_vitalsign\rtwtypes.h
+light\fftimplementationcallback.o: ..\infineon_vitalsign\tmwtypes.h
+light\fftimplementationcallback.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+light\fftimplementationcallback.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+light\fftimplementationcallback.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+light\fftimplementationcallback.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+light\fftimplementationcallback.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+light\fftimplementationcallback.o: ..\infineon_vitalsign\rt_nonfinite.h

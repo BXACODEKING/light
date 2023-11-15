@@ -1,0 +1,15 @@
+light\svmfunctions.o: C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c
+light\svmfunctions.o: C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\SVMFunctions\arm_svm_linear_init_f32.c
+light\svmfunctions.o: C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_functions.h
+light\svmfunctions.o: C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h
+light\svmfunctions.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+light\svmfunctions.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+light\svmfunctions.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+light\svmfunctions.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+light\svmfunctions.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+light\svmfunctions.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+light\svmfunctions.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+light\svmfunctions.o: C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_memory.h
+light\svmfunctions.o: C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h
+light\svmfunctions.o: C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h
+light\svmfunctions.o: C:\Users\asus\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/svm_defines.h

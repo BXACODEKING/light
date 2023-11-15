@@ -1,0 +1,9 @@
+light\rtgetnan.o: ..\infineon_vitalsign\rtGetNaN.c
+light\rtgetnan.o: ..\infineon_vitalsign\rtGetNaN.h
+light\rtgetnan.o: ..\infineon_vitalsign\rtwtypes.h
+light\rtgetnan.o: ..\infineon_vitalsign\tmwtypes.h
+light\rtgetnan.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+light\rtgetnan.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+light\rtgetnan.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+light\rtgetnan.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+light\rtgetnan.o: ..\infineon_vitalsign\rt_nonfinite.h
